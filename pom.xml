@@ -134,9 +134,9 @@
             <artifactId>jackson-module-afterburner</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>test</scope>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.19</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
@@ -852,10 +852,13 @@
                     <artifactId>spring-boot-devtools</artifactId>
                     <optional>true</optional>
                 </dependency>
+                <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
                 <dependency>
-                    <groupId>com.h2database</groupId>
-                    <artifactId>h2</artifactId>
+                    <groupId>mysql</groupId>
+                    <artifactId>mysql-connector-java</artifactId>
+                    <version>8.0.19</version>
                 </dependency>
+
             </dependencies>
             <properties>
                 <!-- default Spring profiles -->
