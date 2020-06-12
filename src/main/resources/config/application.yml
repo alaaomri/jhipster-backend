@@ -135,14 +135,14 @@ info:
 jhipster:
   clientApp:
     name: 'jhipsterSampleApplicationReactApp'
-  # By default CORS is disabled. Uncomment to enable.
-  # cors:
-  #     allowed-origins: "*"
-  #     allowed-methods: "*"
-  #     allowed-headers: "*"
-  #     exposed-headers: "Authorization,Link,X-Total-Count"
-  #     allow-credentials: true
-  #     max-age: 1800
+    # By default CORS is disabled. Uncomment to enable.
+    cors:
+      allowed-origins: "*"
+      allowed-methods: "*"
+      allowed-headers: "*"
+      exposed-headers: "Authorization,Link,X-Total-Count"
+      allow-credentials: true
+      max-age: 1800
   mail:
     from: jhipsterSampleApplicationReact@localhost
   swagger:
@@ -156,6 +156,16 @@ jhipster:
     contact-email:
     license:
     license-url:
+  logging:
+    logstash:
+      enabled: true
+      host: localhost # If using a Virtual Machine on Mac OS X or Windows with docker-machine, use the Docker's host IP here
+      port: 5000
+      queueSize: 512
+  metrics:
+    logs:
+      enabled: true
+      reportFrequency: 60 # seconds
 # ===================================================================
 # Application specific properties
 # Add your own application properties here, see the ApplicationProperties class
